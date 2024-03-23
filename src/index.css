@@ -1,0 +1,104 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  background-color: #F6F7F8 !important;
+}
+
+body.scroll-hidden {
+  overflow: hidden;
+}
+
+.gradient-bg {
+  background: linear-gradient(90deg, #F14141 0%, #FC8935 81.01%);
+}
+
+input[type="checkbox"]:checked+span {
+  background: #F55B3D !important;
+  border-color: #F55B3D !important;
+}
+
+.page-title {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  color: #000;
+}
+
+.card-box {
+  border-radius: 12px;
+  padding: 24px;
+  background: #fff;
+}
+
+.line-box {
+  position: relative;
+}
+
+.line-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 12px;
+  width: 1px;
+  height: 100%;
+  background: #919EAB3D;
+}
+
+.sidebar-nav-link.active {
+  background: #F55B3D14;
+  color: #F55B3D;
+  font-weight: 600;
+}
+
+.sidebar-nav-link.active svg path {
+  fill: #F55B3D;
+}
+
+@media screen and (max-width: 1000px) {
+  header .page-title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-content {
+    position: relative;
+    max-width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  header .page-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .card-box {
+    padding: 20px;
+  }
+
+  .left-sidebar {
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    width: 280px;
+    min-height: 100%;
+    background: #fff;
+    z-index: 100;
+    transition: 0.3s ease;
+  }
+
+  .left-sidebar.active {
+    left: 0;
+  }
+
+  .card-box {
+    padding: 20px;
+  }
+}
