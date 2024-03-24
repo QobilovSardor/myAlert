@@ -53,17 +53,16 @@ export const SendCode = () => {
     e: React.ChangeEvent<HTMLInputElement>
   ) => {
     const value = e.target.value;
-    if (
-      value.length === 1 &&
-      index < inputs.current.length - 1 &&
-      inputs.current[index + 1]
-    ) {
-      inputs.current[index + 1]?.focus();
-    } else if (value.length === 0 && index > 0 && inputs.current[index - 1]) {
-      inputs.current[index - 1]?.focus();
+    if (value && value.length === 1) {
+      if (index < inputs.current.length - 1 && inputs.current[index + 1]) {
+        inputs.current[index + 1]?.focus();
+      } else if (index === inputs.current.length - 1) {
+        e.target.blur();
+      } else if (index > 0 && inputs.current[index - 1]) {
+        inputs.current[index - 1]?.focus();
+      }
     }
   };
-
   return (
     <Box
       backgroundColor="white"

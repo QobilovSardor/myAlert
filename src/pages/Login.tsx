@@ -37,6 +37,7 @@ export const Login = () => {
         pr={{ base: "0", md: 10, desktop: 20 }}
         position="relative"
         flexDir={{ base: "column", md: "row" }}
+        justifyContent="center"
       >
         <Box
           maxW={{ base: "full", md: "458px", desktop: "695px" }}
