@@ -8,6 +8,7 @@ export default function Sidebar() {
   return (
     <Box className="left-sidebar">
       <Flex
+        className="left-sidebar__box"
         justifyContent="space-between"
         flexDirection="column"
         bg="white"
@@ -15,9 +16,10 @@ export default function Sidebar() {
         px={4}
         minW={{ base: "280px", sm: "250px", md: "280px", desktop: "280px" }}
         maxW={{ base: "280px", sm: "250px", md: "280px", desktop: "280px" }}
-        // minH={{ base: "95vh", sm: "100vh" }}
-        h="calc(100% - 50px)"
-        position="fixed"
+        // // minH={{ base: "95vh", sm: "100vh" }}
+        minH={{ base: "auto", sm: "100vh" }}
+        h={{ base: "calc(100% - 50px)", sm: "full" }}
+        position={{ base: "fixed", sm: "initial" }}
       >
         <Box>
           <Link to="/">

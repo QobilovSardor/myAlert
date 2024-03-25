@@ -89,7 +89,7 @@ input[type="checkbox"]:checked+span {
     left: -100%;
     width: 100%;
     /* min-height: 100%; */
-    height: calc(100% - 50px);
+    height: 100vh;
     background: #0000001A;
     z-index: 100;
     transition: 0.3s ease;

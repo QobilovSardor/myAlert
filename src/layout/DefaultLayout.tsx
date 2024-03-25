@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 export const DefaultLayout = () => {
   return (
     <Box position="relative" width="full">
-      <Flex overflow="hidden" width="full">
+      <Flex overflow="hidden" width="full" pb={{ base: "74px", sm: "0" }}>
         <Sidebar />
         <Box
           marginTop={{ base: "20px", sm: "30px", desktop: "40px" }}
