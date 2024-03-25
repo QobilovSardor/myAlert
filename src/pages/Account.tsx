@@ -38,7 +38,7 @@ const Account = () => {
             >
               <Avito leftIcon={assets.avitoLogo} text="Авито" />
               <Text
-                fontSize={{ base: "15px", sm: "base", dektop: "lg" }}
+                fontSize={{ base: "15px", sm: "16px", desktop: "lg" }}
                 lineHeight="22px"
                 fontWeight={600}
               >
@@ -51,8 +51,7 @@ const Account = () => {
               alignItems="center"
             >
               <Text
-                // fontSize={{ base: "15px", sm: "xs", dektop: "100px" }}
-                fontSize={{ base: "10px", sm: "xs", desktop: "16px" }}
+                fontSize={{ base: "xs", desktop: "sm" }}
                 lineHeight={{ base: "14px", desktop: "17px" }}
                 fontWeight={400}
                 color="black.4"
@@ -66,6 +65,8 @@ const Account = () => {
                 text="Удалить"
                 color="#919EAB"
                 to={""}
+                fontSize={{ base: "xs", sm: "sm", desktop: "xs" }}
+                height={{ base: "24px", sm: "32px", desktop: "24px" }}
                 leftIcon={null}
               />
             </Flex>

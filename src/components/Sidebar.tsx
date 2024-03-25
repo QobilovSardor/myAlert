@@ -17,7 +17,6 @@ export default function Sidebar() {
         maxW={{ base: "280px", sm: "250px", md: "280px", desktop: "280px" }}
         minH={{ base: "95vh", sm: "100vh" }}
         h="100%"
-
       >
         <Box>
           <Link to="/">
@@ -108,7 +107,7 @@ export default function Sidebar() {
             >
               <Image src={assets.telegramIcon} />
             </Box>
-            <Heading color="black.1" mb={1} fontSize="base" lineHeight={6}>
+            <Heading color="black.1" mb={1} fontSize="16px" lineHeight={6}>
               Нужна помощь?
             </Heading>
             <Text color="black.5" fontSize="sm" lineHeight="20px" mb="20px">
@@ -130,7 +129,9 @@ export default function Sidebar() {
             colorScheme="gray"
             color="#919EAB"
             size="sm"
+            fontSize="12px"
             width="full"
+            variant="outline"
             to="/login"
             leftIcon={null}
           />

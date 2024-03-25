@@ -74,6 +74,7 @@ export const SendCode = () => {
       width="full"
       backgroundImage={{ base: assets.loginBanner, md: "none" }}
       py={{ base: "65", md: "auto" }}
+      minH={{ base: "687px", sm: "687px", desktop: "fit-content" }}
     >
       <Image
         w={{ base: "219px", md: "full" }}
@@ -154,7 +155,13 @@ export const SendCode = () => {
           >
             Вход в аккаунт
           </Heading>
-          <Text lineHeight={6} mb={1} color="black.1" fontWeight={500}>
+          <Text
+            lineHeight={6}
+            mb={1}
+            color="black.1"
+            fontWeight={500}
+            fontSize="sm"
+          >
             На ваш номер телефона придёт СМС с кодом, введите его
           </Text>
           <Flex gap="6px">
@@ -203,12 +210,14 @@ export const SendCode = () => {
               bg="#919EAB"
               color="white"
               to="/login/send-code"
+              fontSize="16px"
               _hover={{ bg: "black.2" }}
             />
             <ButtonComponent
               text="Назад"
               width="full"
               size={"lg"}
+              fontSize="16px"
               variant="outline"
               colorScheme="gray"
               color="black.4"

@@ -16,7 +16,9 @@ interface ButtonComponentProps {
   leftIcon?: React.ReactNode;
   variant?: string;
   bg?: string;
-  _hover?: SystemStyleObject
+  _hover?: SystemStyleObject;
+  fontSize?: string | { base: string; sm: string; desktop: string };
+  height?: string | { base: string; sm: string; desktop: string };
 }
 
 export const ButtonComponent: React.FC<ButtonComponentProps> = ({
@@ -29,7 +31,10 @@ export const ButtonComponent: React.FC<ButtonComponentProps> = ({
   size,
   color,
   bg,
-  _hover
+  _hover,
+  fontSize,
+  height,
+  variant
 }) => {
   return (
     <Link to={to}>
@@ -43,6 +48,9 @@ export const ButtonComponent: React.FC<ButtonComponentProps> = ({
         gap="6px"
         color={color}
         _hover={_hover}
+        fontSize={fontSize}
+        height={height}
+        variant={variant}
       >
         {icon && <Image src={icon} />}
         <span>{text}</span>

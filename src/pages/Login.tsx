@@ -22,6 +22,7 @@ export const Login = () => {
       width="full"
       backgroundImage={{ base: assets.loginBanner, md: "none" }}
       py={{ base: "126px", md: "0" }}
+      minH={{ base: "687px", sm: "687px", desktop: "fit-content" }}
     >
       <Image
         w={{ base: "219px", md: "full" }}
@@ -108,6 +109,8 @@ export const Login = () => {
             text={"Далее"}
             width="full"
             size={"lg"}
+            fontSize={"16px"}
+            height="46px"
             colorScheme={"brand"}
             to="/login/send-code"
           />

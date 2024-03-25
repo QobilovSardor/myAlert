@@ -17,11 +17,11 @@ const EditingAdding = () => {
   return (
     <>
       <Header text="Редактирование /  добавление" addBtn={false} />
-      <Stack className="card-box">
+      <Stack className="card-box" px={{ base: "16px", sm: 6, desktop: 6 }}>
         <Box>
           <Flex gap={2} alignItems="center">
             <Flex
-              fontSize={{ base: "sm", sm: "15px", desktop: "base" }}
+              fontSize={{ base: "sm", sm: "15px", desktop: "16px" }}
               borderRadius="50%"
               w={6}
               h={6}
@@ -34,7 +34,7 @@ const EditingAdding = () => {
             </Flex>
             <Heading
               as="h5"
-              fontSize={{ base: "sm", sm: "15px", desktop: "base" }}
+              fontSize={{ base: "sm", sm: "15px", desktop: "16px" }}
               color="black.1"
               fontWeight={500}
               lineHeight="22px"
@@ -56,11 +56,8 @@ const EditingAdding = () => {
             <Select
               size={{ base: "sm", sm: "lg" }}
               w={{ base: "100%", tablet: "500px" }}
-            >
-              <option value="Brand Jewelry Studio">Brand Jewelry Studio</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
-            </Select>
+              placeholder="Brand Jewelry Studio"
+            />
             <Text
               cursor="pointer"
               userSelect="none"
@@ -75,7 +72,7 @@ const EditingAdding = () => {
         <Box>
           <Flex gap={2} alignItems="center">
             <Flex
-              fontSize={{ base: "sm", sm: "15px", desktop: "base" }}
+              fontSize={{ base: "sm", sm: "15px", desktop: "16px" }}
               borderRadius="50%"
               w={6}
               h={6}
@@ -88,7 +85,7 @@ const EditingAdding = () => {
             </Flex>
             <Heading
               as="h5"
-              fontSize={{ base: "sm", sm: "15px", desktop: "base" }}
+              fontSize={{ base: "sm", sm: "15px", desktop: "16px" }}
               color="black.1"
               fontWeight={500}
               lineHeight="22px"
@@ -115,11 +112,8 @@ const EditingAdding = () => {
               <Select
                 size={{ base: "sm", sm: "lg" }}
                 w={{ base: "100%", tablet: "500px" }}
-              >
-                <option>Пропущенные сообщения</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-              </Select>
+                placeholder="Пропущенные сообщения"
+              />
             </Box>
             <Box>
               <Text
@@ -184,7 +178,7 @@ const EditingAdding = () => {
         <Box>
           <Flex gap={2} alignItems="center">
             <Flex
-              fontSize={{ base: "sm", sm: "15px", desktop: "base" }}
+              fontSize={{ base: "sm", sm: "15px", desktop: "16px" }}
               borderRadius="50%"
               w={6}
               h={6}
@@ -197,7 +191,7 @@ const EditingAdding = () => {
             </Flex>
             <Heading
               as="h5"
-              fontSize={{ base: "sm", sm: "15px", desktop: "base" }}
+              fontSize={{ base: "sm", sm: "15px", desktop: "16px" }}
               color="black.1"
               fontWeight={500}
               lineHeight="22px"
@@ -275,18 +269,24 @@ const EditingAdding = () => {
         mb="45px"
       >
         <ButtonComponent
-          size={{ base: "lg", sm: "md" }}
+          size="md"
           icon={assets.trashLogo}
           variant="outline"
           text="Удалить навсегда"
+          fontSize="16px"
           color="black.5"
-          width={{ base: "full", sm: "fit-content" }} to={""} />
+          width={{ base: "full", sm: "fit-content" }}
+          to={""}
+        />
         <ButtonComponent
           colorScheme={"brand"}
-          text={"Добавить"}
+          text="Сохранить"
           width={{ base: "full", sm: "fit-content" }}
           icon={assets.saveIcon}
-          size={{ base: "lg", sm: "md" }} to={""} color={"white"}/>
+          size={{ base: "lg", sm: "md" }}
+          to={""}
+          color={"white"}
+        />
       </Flex>
     </>
   );
