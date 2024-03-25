@@ -15,8 +15,9 @@ export default function Sidebar() {
         px={4}
         minW={{ base: "280px", sm: "250px", md: "280px", desktop: "280px" }}
         maxW={{ base: "280px", sm: "250px", md: "280px", desktop: "280px" }}
-        minH={{ base: "95vh", sm: "100vh" }}
-        h="100%"
+        // minH={{ base: "95vh", sm: "100vh" }}
+        h="calc(100% - 50px)"
+        position="fixed"
       >
         <Box>
           <Link to="/">
